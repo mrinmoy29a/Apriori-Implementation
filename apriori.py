@@ -2,6 +2,8 @@
 Apriori Algorithm implementation
 
 The program reads datasets from a .csv file and output the association rules.
+
+program not yet completed
 '''
 
 from itertools import chain, combinations
