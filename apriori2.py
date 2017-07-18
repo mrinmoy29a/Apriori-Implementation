@@ -66,7 +66,8 @@ def supportof(pat):
 		ds = frozenset(d)
 		if pat.issubset(ds):
 			frequency += 1
-			tempdata.append(d)
+			if d not in tempdata:
+				tempdata.append(d)
 	
 	return frequency
 
@@ -93,7 +94,7 @@ def apriori(minsup):
 
 		for c in Ck:
 			if supportof(c) >= minsup*NTd:	
-				candidates[k].append(c)
+				candidates[k].append(sorted(c))
 		
 		print candidates[k]
 		k += 1
@@ -102,10 +103,4 @@ def apriori(minsup):
 		del Ck
 	
 generateData("chess.dat")
-apriori(0.9)
-	
-	
-	
-	
-	
-
+apriori(0.95)
