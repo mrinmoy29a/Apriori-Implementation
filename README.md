@@ -8,7 +8,7 @@ You can run the script directly from command line.
      
 Or you will be prompted to send inputs from interface.
 
-## Apriori
+## Source
 An overview of Association Rule Mining can be found here: https://en.wikipedia.org/wiki/Association_rule_learning
 
 The example dataset chess.dat was taken from http://fimi.ua.ac.be/. More datasets can be found here.
